@@ -1,0 +1,15 @@
+<div >
+    <ngb-carousel *ngIf="contentImages.length>0">
+        <ng-template ngbSlide *ngFor="let image of contentImages">
+          <div class="picsum-img-wrapper">
+            <img [src]="image" alt="Random first slide"  width="100%" height="100%">
+          </div>
+          <div class="carousel-caption">
+            <h3>10 seconds between slides...</h3>
+            <p>This carousel uses customized default values.</p>
+          </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
+
+  

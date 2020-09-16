@@ -1,0 +1,12 @@
+<div style="padding-top: 2%;">
+    <div>
+        <input type="file" (change)="fileChange($event)" placeholder="Upload file" #inputFile>  
+        <button type="button" (click)="UploadImages()" class="btn btn-primary">Upload Image</button>
+    </div>
+      
+    <div class="row h-100 justify-content-center align-items-center" style="padding-top: 10px;" *ngIf="displyResult">
+        <div class="col-10 col-md-8 col-lg-6 success success-primary">
+            <p>{{displyMessage}}</p>
+        </div>
+    </div>
+</div>
